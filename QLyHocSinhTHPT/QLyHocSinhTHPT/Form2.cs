@@ -13,7 +13,7 @@ namespace QLyHocSinhTHPT
 {
     public partial class Form2 : Form
     {
-        private string link = @"Data Source=.\SQLEXPRESS;Initial Catalog=QUANLYTHPT;Integrated Security=True";
+        private string link = @"Data Source=NAM\SQLDEV2019;Initial Catalog=QUANLYTHPT;Integrated Security=True";
         private SqlConnection connect;
         private SqlCommand command;
         public Form2()
@@ -33,7 +33,7 @@ namespace QLyHocSinhTHPT
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.GIAOVIEN' table. You can move, or remove it, as needed.
             this.gIAOVIENTableAdapter.Fill(this.qUANLYTHPTDataSet1.GIAOVIEN);
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.THOIKHOABIEU' table. You can move, or remove it, as needed.
-            this.tHOIKHOABIEUTableAdapter.Fill(this.qUANLYTHPTDataSet1.THOIKHOABIEU);
+            //this.tHOIKHOABIEUTableAdapter.Fill(this.qUANLYTHPTDataSet1.THOIKHOABIEU);
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet1.MONHOC' table. You can move, or remove it, as needed.
             this.mONHOCTableAdapter1.Fill(this.qUANLYTHPTDataSet1.MONHOC);
             // TODO: This line of code loads data into the 'qUANLYTHPTDataSet.MONHOC' table. You can move, or remove it, as needed.
